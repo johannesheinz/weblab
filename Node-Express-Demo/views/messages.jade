@@ -1,0 +1,14 @@
+extends layout
+
+block content  
+  h1 Nachrichten f&uuml;r #{user.name}
+  #messages
+    ul
+      - each message in user.messages 
+        li= message
+  h1 Neue Nachricht
+  p
+    form(action='/users/messages/#{user.name}', method='post')#messageForm
+      input(type='text', name='message').messageInput
+      input(type='submit', value='OK')
+  script(src='/javascripts/messages.js')
