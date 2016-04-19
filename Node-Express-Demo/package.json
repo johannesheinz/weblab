@@ -1,6 +1,6 @@
 {
-  "name": "VS1-Node-Express-Demo",
-  "version": "0.0.0",
+  "name": "Node-Express-Demo",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
